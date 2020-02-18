@@ -21,7 +21,7 @@ pipeline
         {
             steps
             {
-                sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/declarativepipeline/webapp/target/webapp.war ubuntu@172.31.36.235:/var/lib/tomcat8/webapps/testapp.war'
+                sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/declarativepipeline/webapp/target/webapp.war ubuntu@172.31.35.106:/var/lib/tomcat8/webapps/testapp.war'
             }
         }
         stage('continoustesting')
@@ -36,7 +36,7 @@ pipeline
         {
             steps
             {
-                 sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/declarativepipeline/webapp/target/webapp.war ubuntu@172.31.35.125:/var/lib/tomcat8/webapps/prod.war'
+                 sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/declarativepipeline/webapp/target/webapp.war ubuntu@172.31.34.200:/var/lib/tomcat8/webapps/prod.war'
             }
         }
     }
