@@ -8,10 +8,7 @@ node('master')
     {
         sh label: '', script: 'mvn package'
     }
-    stage('ContinuousDeployment')
-    {
-       sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/declarativepipeline/webapp/target/webapp.war ubuntu@172.31.35.106:/var/lib/tomcat8/webapps/testapp.war'
-       }
+   
     
     
 }
